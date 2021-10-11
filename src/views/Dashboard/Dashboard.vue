@@ -74,7 +74,7 @@
       </div>
 
       <div class="binance-section">
-        <div class="flex flex-space-between">
+        <div class="flex flex-space-between ">
           <div class="coin-head">
             <img src="../../assets/coinIcons/56.png" alt="" /> Binance
           </div>
@@ -91,7 +91,52 @@
                 src="../../assets/coinIcons/bvaults.png"
                 alt=""
               />
-              <div class="text-left"> 
+              <div class="text-left">
+                <div class="top-head">bVaults</div>
+                <div class="botm-head">1 pools</div>
+              </div>
+            </div>
+            <div>
+              <div class="top-head">$785.62</div>
+              <div class="amount">+ $0.44</div>
+            </div>
+          </div>
+
+          <div class="single-card">
+            <div class="flex">
+              <img
+                class="icon"
+                src="../../assets/coinIcons/autofarm.png"
+                alt=""
+              />
+              <div class="text-left">
+                <div class="top-head">Autofarm</div>
+                <div class="botm-head">1 pools</div>
+              </div>
+            </div>
+            <div>
+              <div class="top-head">$785.62</div>
+              <div class="amount">+ $0.44</div>
+            </div>
+          </div>
+
+          <div class="flex flex-space-between mt-75">
+            <div class="coin-head">
+              <img src="../../assets/coinIcons/137.png" alt="" /> Polygon
+            </div>
+            <div class="calc">
+              $754.12 + $1,185.45 <span style="color: #16a548"> + $13.29 </span>
+            </div>
+          </div>
+
+          <div class="single-card">
+            <div class="flex">
+              <img
+                class="icon"
+                src="../../assets/coinIcons/eleven.png"
+                alt=""
+              />
+              <div class="text-left">
                 <div class="top-head">bVaults</div>
                 <div class="botm-head">1 pools</div>
               </div>
@@ -252,7 +297,7 @@ export default {
         color: #f4ae14;
         img {
           width: 30px;
-          margin-right: 12px;
+          margin: 0 12px;
           border: 1px solid #4a4646;
           border-radius: 50%;
         }
