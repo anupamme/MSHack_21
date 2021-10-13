@@ -22,5 +22,20 @@ body{
   margin: 0;
   font-family: 'Space Grotesk', sans-serif;
 }
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 0px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #eb9472;
+  border-radius: 0px;
+}
 
 </style>

@@ -45,105 +45,286 @@
       </div>
       <div class="three-cards">
         <div class="single-card">
-          <div class="icon-circle icon-circle-org">
-            <img src="../../assets/wallet.png" alt="" />
+          <div class="inner main-card" @click="valletBalance = !valletBalance">
+            <div class="icon-circle icon-circle-org">
+              <img src="../../assets/wallet.png" alt="" />
+            </div>
+            <div>
+              <div class="top-head">Wallet Balances</div>
+              <div class="amount">$12,786.12</div>
+            </div>
           </div>
-          <div>
-            <div class="top-head">Wallet Balances</div>
-            <div class="amount">$12,786.12</div>
+          <div class="details-sec" v-if="valletBalance">
+            <div class="sep-coin-sec">
+              <div class="inner main">
+                <div class="flex head">
+                  <img
+                    class="detail-imgs"
+                    src="../../assets/coinIcons/ether.png"
+                    alt=""
+                  />
+                  Ethereum
+                </div>
+                <div class="amt">$9668.54</div>
+              </div>
+
+              <div class="inner sub">
+                <div class="flex">
+                  <img
+                    class="detail-imgs"
+                    src="../../assets/coinIcons/uni_F984.webp"
+                    alt=""
+                  />
+                  <div class="text-left">
+                    <div class="head">Uni</div>
+                    <div class="sub-head">400.0</div>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <div class="head">$9668.54</div>
+                  <div class="sub-head">1 uni = $24.06</div>
+                </div>
+              </div>
+
+              <div class="inner sub">
+                <div class="flex">
+                  <img
+                    class="detail-imgs"
+                    src="../../assets/coinIcons/ether.png"
+                    alt=""
+                  />
+                  <div class="text-left">
+                    <div class="head">Eth</div>
+                    <div class="sub-head">400.0</div>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <div class="head">$9668.54</div>
+                  <div class="sub-head">1 uni = $24.06</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sep-coin-sec">
+              <div class="inner main">
+                <div class="flex head">
+                  <img
+                    class="detail-imgs"
+                    src="../../assets/coinIcons/ether.png"
+                    alt=""
+                  />
+                  Ethereum
+                </div>
+                <div class="amt">$9668.54</div>
+              </div>
+
+              <div class="inner sub">
+                <div class="flex">
+                  <img
+                    class="detail-imgs"
+                    src="../../assets/coinIcons/uni_F984.webp"
+                    alt=""
+                  />
+                  <div class="text-left">
+                    <div class="head">Uni</div>
+                    <div class="sub-head">400.0</div>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <div class="head">$9668.54</div>
+                  <div class="sub-head">1 uni = $24.06</div>
+                </div>
+              </div>
+
+              <div class="inner sub">
+                <div class="flex">
+                  <img
+                    class="detail-imgs"
+                    src="../../assets/coinIcons/ether.png"
+                    alt=""
+                  />
+                  <div class="text-left">
+                    <div class="head">Eth</div>
+                    <div class="sub-head">400.0</div>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <div class="head">$9668.54</div>
+                  <div class="sub-head">1 uni = $24.06</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="single-card">
-          <div class="icon-circle icon-circle-pink">
-            <img src="../../assets/stake.png" alt="" />
-          </div>
-          <div>
-            <div class="top-head">Total Staked</div>
-            <div class="amount">$12,786.12</div>
+          <div class="inner main-card">
+            <div class="icon-circle icon-circle-pink">
+              <img src="../../assets/stake.png" alt="" />
+            </div>
+            <div>
+              <div class="top-head">Total Staked</div>
+              <div class="amount">$12,786.12</div>
+            </div>
           </div>
         </div>
         <div class="single-card">
-          <div class="icon-circle icon-circle-green">
-            <img src="../../assets/happiness.png" alt="" />
-          </div>
-          <div>
-            <div class="top-head">Total Pending</div>
-            <div class="amount">$12,786.12</div>
+          <div class="inner main-card">
+            <div class="icon-circle icon-circle-green">
+              <img src="../../assets/happiness.png" alt="" />
+            </div>
+            <div>
+              <div class="top-head">Total Pending</div>
+              <div class="amount">$12,786.12</div>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="binance-section">
-        <div class="flex flex-space-between ">
-          <div class="coin-head">
-            <img src="../../assets/coinIcons/56.png" alt="" /> Binance
-          </div>
-          <div class="calc">
-            $754.12 + $1,185.45 <span style="color: #16a548"> + $13.29 </span>
-          </div>
-        </div>
-
         <div class="bottom-cards-main">
-          <div class="single-card">
-            <div class="flex">
-              <img
-                class="icon"
-                src="../../assets/coinIcons/bvaults.png"
-                alt=""
-              />
-              <div class="text-left">
-                <div class="top-head">bVaults</div>
-                <div class="botm-head">1 pools</div>
+          <div>
+            <div class="flex flex-space-between">
+              <div class="coin-head">
+                <img src="../../assets/coinIcons/56.png" alt="" /> Binance
+              </div>
+              <div class="calc">
+                $754.12 + $1,185.45
+                <span style="color: #16a548"> + $13.29 </span>
               </div>
             </div>
-            <div>
-              <div class="top-head">$785.62</div>
-              <div class="amount">+ $0.44</div>
+
+            <div class="single-card">
+              <div class="inner-sec">
+                <div class="flex">
+                  <img
+                    class="icon"
+                    src="../../assets/coinIcons/bvaults.png"
+                    alt=""
+                  />
+                  <div class="text-left">
+                    <div class="top-head">bVaults</div>
+                    <div class="botm-head">1 pools</div>
+                  </div>
+                </div>
+                <div>
+                  <div class="top-head">$785.62</div>
+                  <div class="amount">+ $0.44</div>
+                </div>
+              </div>
+              <div class="bin-details-sec">
+                <div class="flex-space-between">
+                  <div class="flex">
+                    <img
+                      class="icon"
+                      src="../../assets/coinIcons/bdov2_6A12-busd_7D56.webp"
+                      alt=""
+                    />
+                    <div class="text-left">
+                      <div class="top-head">BDOV2-BUSD</div>
+                      <div class="botm-head">137% / Daily 0.09%</div>
+                    </div>
+                  </div>
+
+                  <div class="right-sec flex">
+                    <div class="divider flex-space-between-only align-start">
+                      <div class="text-right mr-20">
+                        <div class="botm-head">Risk</div>
+                        <div class="top-head">~1.5/5</div>
+                      </div>
+
+                      <div class="text-right">
+                        <div class="botm-head">Pending</div>
+                        <div class="top-head" style="color: #7eae61">$0.40</div>
+                        <div class="top-head" style="color: #7eae61">$0.08</div>
+                      </div>
+                    </div>
+
+                    <div class="divider flex-space-between-only align-start">
+                      <div class="text-right mr-20">
+                        <div class="botm-head">Yield</div>
+                        <div class="top-head" style="color: #7eae61">
+                          $49.83
+                        </div>
+                        <div class="botm-head">165.17649</div>
+                      </div>
+
+                      <div class="text-right">
+                        <div class="botm-head">Deposit</div>
+                        <div class="top-head">$733.90</div>
+                        <div class="botm-head">2,432.95863</div>
+                      </div>
+                    </div>
+
+                    <div class="divider flex-space-between-only align-start">
+                      <div class="text-right mr-20">
+                        <div class="botm-head">Total</div>
+                        <div class="top-head">$783.72</div>
+                        <div class="botm-head">165.17649</div>
+                      </div>
+
+                      <div class="text-right">
+
+
+                        <div class="botm-head">Start Date</div>
+                        <div class="botm-head">4 months<br> ago</div>
+                        <div class="botm-head" style="color: #7eae61">+6.85%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="single-card">
+              <div class="inner-sec">
+                <div class="flex">
+                  <img
+                    class="icon"
+                    src="../../assets/coinIcons/autofarm.png"
+                    alt=""
+                  />
+                  <div class="text-left">
+                    <div class="top-head">Autofarm</div>
+                    <div class="botm-head">1 pools</div>
+                  </div>
+                </div>
+                <div>
+                  <div class="top-head">$785.62</div>
+                  <div class="amount">+ $0.44</div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="single-card">
-            <div class="flex">
-              <img
-                class="icon"
-                src="../../assets/coinIcons/autofarm.png"
-                alt=""
-              />
-              <div class="text-left">
-                <div class="top-head">Autofarm</div>
-                <div class="botm-head">1 pools</div>
+          <div>
+            <div class="flex flex-space-between mt-75">
+              <div class="coin-head">
+                <img src="../../assets/coinIcons/137.png" alt="" /> Polygon
+              </div>
+              <div class="calc">
+                $754.12 + $1,185.45
+                <span style="color: #16a548"> + $13.29 </span>
               </div>
             </div>
-            <div>
-              <div class="top-head">$785.62</div>
-              <div class="amount">+ $0.44</div>
-            </div>
-          </div>
 
-          <div class="flex flex-space-between mt-75">
-            <div class="coin-head">
-              <img src="../../assets/coinIcons/137.png" alt="" /> Polygon
-            </div>
-            <div class="calc">
-              $754.12 + $1,185.45 <span style="color: #16a548"> + $13.29 </span>
-            </div>
-          </div>
-
-          <div class="single-card">
-            <div class="flex">
-              <img
-                class="icon"
-                src="../../assets/coinIcons/eleven.png"
-                alt=""
-              />
-              <div class="text-left">
-                <div class="top-head">bVaults</div>
-                <div class="botm-head">1 pools</div>
+            <div class="single-card">
+              <div class="inner-sec">
+                <div class="flex">
+                  <img
+                    class="icon"
+                    src="../../assets/coinIcons/eleven.png"
+                    alt=""
+                  />
+                  <div class="text-left">
+                    <div class="top-head">Eleven</div>
+                    <div class="botm-head">1 pools</div>
+                  </div>
+                </div>
+                <div>
+                  <div class="top-head">$785.62</div>
+                  <div class="amount">+ $0.44</div>
+                </div>
               </div>
-            </div>
-            <div>
-              <div class="top-head">$785.62</div>
-              <div class="amount">+ $0.44</div>
             </div>
           </div>
         </div>
@@ -184,6 +365,7 @@ export default {
       ],
       value: "",
       currency: "USD - $",
+      valletBalance: true,
       currencyList: [
         { currencyName: "USD - $" },
         { currencyName: "EUR - €" },
@@ -197,6 +379,10 @@ export default {
         { currencyName: "SAR - ر.س.‏" },
       ],
     };
+  },
+  methods: {
+    // showDetails(cardName){
+    // }
   },
 };
 </script>
@@ -240,19 +426,24 @@ export default {
     .three-cards {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
       margin-top: 60px;
+      .main-card {
+        cursor: pointer;
+      }
       .single-card {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         padding: 20px;
-        height: 60px;
+        min-height: 60px;
         width: 30%;
         background-color: #0b2025;
         border: 1px solid #37474b;
         border-radius: 2px;
         margin: 0px 10px;
+        .inner {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
         .icon-circle {
           padding: 10px;
           border-radius: 50%;
@@ -285,6 +476,42 @@ export default {
           font-size: 2rem;
           font-weight: bold;
         }
+        .details-sec {
+          margin-top: 20px;
+          height: 200px;
+          overflow-y: auto;
+          .sep-coin-sec {
+            margin-top: 20px;
+            border-bottom: 1px solid gray;
+          }
+          .detail-imgs {
+            width: 23px;
+            margin-right: 10px;
+          }
+          .inner {
+            padding: 10px 0;
+            padding-right: 10px;
+          }
+          .main {
+            .head {
+              color: #5777e7;
+            }
+            .amt {
+              font-size: 18px;
+              font-weight: 800;
+            }
+          }
+          .sub {
+            .head {
+              text-transform: uppercase;
+              font-size: 16px;
+            }
+            .sub-head {
+              font-size: 14px;
+              color: #79898d;
+            }
+          }
+        }
       }
     }
     .binance-section {
@@ -306,18 +533,19 @@ export default {
         font-weight: 700;
         font-size: 18px;
       }
-
       .single-card {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         padding: 20px;
-        height: 54px;
+        min-height: 54px;
         width: 94%;
         background-color: #0b2025;
         border: 1px solid #37474b;
         border-radius: 2px;
         margin: 30px 10px;
+        .inner-sec {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
         .icon {
           width: 40px;
           margin-right: 12px;
@@ -334,6 +562,17 @@ export default {
           font-weight: 700;
           font-size: 18px;
           color: #16a548;
+        }
+        .bin-details-sec {
+          height: 100px;
+          padding: 30px 15px;
+          border: 1px solid #37474b;
+          margin-top: 25px;
+          background-color: #10292f;
+          .divider {
+            border-right: 1px solid;
+            padding: 0px 25px;
+          }
         }
       }
     }
